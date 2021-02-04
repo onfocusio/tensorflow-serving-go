@@ -8,7 +8,6 @@ package apis
 
 import (
 	proto "github.com/golang/protobuf/proto"
-	core "github.com/onfocusio/tensorflow-serving-go/tensorflow_serving/core"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -307,7 +306,7 @@ type PredictionLog struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	LogMetadata *core.LogMetadata `protobuf:"bytes,1,opt,name=log_metadata,json=logMetadata,proto3" json:"log_metadata,omitempty"`
+	LogMetadata *LogMetadata `protobuf:"bytes,1,opt,name=log_metadata,json=logMetadata,proto3" json:"log_metadata,omitempty"`
 	// Types that are assignable to LogType:
 	//	*PredictionLog_ClassifyLog
 	//	*PredictionLog_RegressLog
@@ -349,7 +348,7 @@ func (*PredictionLog) Descriptor() ([]byte, []int) {
 	return file_tensorflow_serving_apis_prediction_log_proto_rawDescGZIP(), []int{5}
 }
 
-func (x *PredictionLog) GetLogMetadata() *core.LogMetadata {
+func (x *PredictionLog) GetLogMetadata() *LogMetadata {
 	if x != nil {
 		return x.LogMetadata
 	}
@@ -565,7 +564,7 @@ var file_tensorflow_serving_apis_prediction_log_proto_goTypes = []interface{}{
 	(*MultiInferenceResponse)(nil), // 13: tensorflow.serving.MultiInferenceResponse
 	(*SessionRunRequest)(nil),      // 14: tensorflow.serving.SessionRunRequest
 	(*SessionRunResponse)(nil),     // 15: tensorflow.serving.SessionRunResponse
-	(*core.LogMetadata)(nil),       // 16: tensorflow.serving.LogMetadata
+	(*LogMetadata)(nil),            // 16: tensorflow.serving.LogMetadata
 }
 var file_tensorflow_serving_apis_prediction_log_proto_depIdxs = []int32{
 	6,  // 0: tensorflow.serving.ClassifyLog.request:type_name -> tensorflow.serving.ClassificationRequest

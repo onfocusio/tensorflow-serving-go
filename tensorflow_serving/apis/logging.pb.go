@@ -4,11 +4,10 @@
 // 	protoc        v3.14.0
 // source: tensorflow_serving/core/logging.proto
 
-package core
+package apis
 
 import (
 	proto "github.com/golang/protobuf/proto"
-	apis "github.com/onfocusio/tensorflow-serving-go/tensorflow_serving/apis"
 	config "github.com/onfocusio/tensorflow-serving-go/tensorflow_serving/config"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
@@ -33,7 +32,7 @@ type LogMetadata struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	ModelSpec      *apis.ModelSpec        `protobuf:"bytes,1,opt,name=model_spec,json=modelSpec,proto3" json:"model_spec,omitempty"`
+	ModelSpec      *ModelSpec             `protobuf:"bytes,1,opt,name=model_spec,json=modelSpec,proto3" json:"model_spec,omitempty"`
 	SamplingConfig *config.SamplingConfig `protobuf:"bytes,2,opt,name=sampling_config,json=samplingConfig,proto3" json:"sampling_config,omitempty"`
 	// List of tags used to load the relevant MetaGraphDef from SavedModel.
 	SavedModelTags []string `protobuf:"bytes,3,rep,name=saved_model_tags,json=savedModelTags,proto3" json:"saved_model_tags,omitempty"` // TODO(b/33279154): Add more metadata as mentioned in the bug.
@@ -71,7 +70,7 @@ func (*LogMetadata) Descriptor() ([]byte, []int) {
 	return file_tensorflow_serving_core_logging_proto_rawDescGZIP(), []int{0}
 }
 
-func (x *LogMetadata) GetModelSpec() *apis.ModelSpec {
+func (x *LogMetadata) GetModelSpec() *ModelSpec {
 	if x != nil {
 		return x.ModelSpec
 	}
@@ -135,7 +134,7 @@ func file_tensorflow_serving_core_logging_proto_rawDescGZIP() []byte {
 var file_tensorflow_serving_core_logging_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_tensorflow_serving_core_logging_proto_goTypes = []interface{}{
 	(*LogMetadata)(nil),           // 0: tensorflow.serving.LogMetadata
-	(*apis.ModelSpec)(nil),        // 1: tensorflow.serving.ModelSpec
+	(*ModelSpec)(nil),             // 1: tensorflow.serving.ModelSpec
 	(*config.SamplingConfig)(nil), // 2: tensorflow.serving.SamplingConfig
 }
 var file_tensorflow_serving_core_logging_proto_depIdxs = []int32{
