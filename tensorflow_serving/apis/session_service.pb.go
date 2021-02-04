@@ -9,7 +9,7 @@ package apis
 import (
 	context "context"
 	proto "github.com/golang/protobuf/proto"
-	for_core_protos_go_proto "github.com/onfocusio/tensorflow-serving-go/v2/tensorflow/go/core/protobuf/for_core_protos_go_proto"
+	for_core_protos_go_proto "github.com/onfocusio/tensorflow-serving-go/tensorflow/go/core/protobuf/for_core_protos_go_proto"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"

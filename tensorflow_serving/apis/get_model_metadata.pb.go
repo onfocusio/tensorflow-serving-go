@@ -8,7 +8,7 @@ package apis
 
 import (
 	proto "github.com/golang/protobuf/proto"
-	for_core_protos_go_proto "github.com/onfocusio/tensorflow-serving-go/v2/tensorflow/go/core/protobuf/for_core_protos_go_proto"
+	for_core_protos_go_proto "github.com/onfocusio/tensorflow-serving-go/tensorflow/go/core/protobuf/for_core_protos_go_proto"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	anypb "google.golang.org/protobuf/types/known/anypb"

@@ -11,7 +11,7 @@ package for_core_protos_go_proto
 
 import (
 	proto "github.com/golang/protobuf/proto"
-	stream_executor "github.com/onfocusio/tensorflow-serving-go/v2/tensorflow/go/stream_executor"
+	stream_executor "github.com/onfocusio/tensorflow-serving-go/tensorflow/go/stream_executor"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

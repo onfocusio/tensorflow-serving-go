@@ -11,7 +11,7 @@ package apis
 
 import (
 	proto "github.com/golang/protobuf/proto"
-	example_protos_go_proto "github.com/onfocusio/tensorflow-serving-go/v2/tensorflow/go/core/example/example_protos_go_proto"
+	example_protos_go_proto "github.com/onfocusio/tensorflow-serving-go/tensorflow/go/core/example/example_protos_go_proto"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -31,7 +31,7 @@ const _ = proto.ProtoPackageIsVersion4
 
 // Specifies one or more fully independent input Examples.
 // See examples at:
-//     https://github.com/onfocusio/tensorflow-serving-go/v2/blob/master/tensorflow/core/example/example.proto
+//     https://github.com/onfocusio/tensorflow-serving-go/blob/master/tensorflow/core/example/example.proto
 type ExampleList struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache

@@ -1,4 +1,4 @@
-module github.com/onfocusio/tensorflow-serving-go/v2
+module github.com/onfocusio/tensorflow-serving-go
 
 go 1.15
 

@@ -23,9 +23,9 @@ package for_core_protos_go_proto
 
 import (
 	proto "github.com/golang/protobuf/proto"
-	device_attributes_go_proto "github.com/onfocusio/tensorflow-serving-go/v2/tensorflow/go/core/framework/device_attributes_go_proto"
-	graph_go_proto "github.com/onfocusio/tensorflow-serving-go/v2/tensorflow/go/core/framework/graph_go_proto"
-	tensor_go_proto "github.com/onfocusio/tensorflow-serving-go/v2/tensorflow/go/core/framework/tensor_go_proto"
+	device_attributes_go_proto "github.com/onfocusio/tensorflow-serving-go/tensorflow/go/core/framework/device_attributes_go_proto"
+	graph_go_proto "github.com/onfocusio/tensorflow-serving-go/tensorflow/go/core/framework/graph_go_proto"
+	tensor_go_proto "github.com/onfocusio/tensorflow-serving-go/tensorflow/go/core/framework/tensor_go_proto"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

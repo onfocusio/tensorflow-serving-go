@@ -8,8 +8,8 @@ package core
 
 import (
 	proto "github.com/golang/protobuf/proto"
-	apis "github.com/onfocusio/tensorflow-serving-go/v2/tensorflow_serving/apis"
-	config "github.com/onfocusio/tensorflow-serving-go/v2/tensorflow_serving/config"
+	apis "github.com/onfocusio/tensorflow-serving-go/tensorflow_serving/apis"
+	config "github.com/onfocusio/tensorflow-serving-go/tensorflow_serving/config"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

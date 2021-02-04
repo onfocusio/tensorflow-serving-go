@@ -8,7 +8,7 @@ package config
 
 import (
 	proto "github.com/golang/protobuf/proto"
-	storage_path "github.com/onfocusio/tensorflow-serving-go/v2/tensorflow_serving/sources/storage_path"
+	storage_path "github.com/onfocusio/tensorflow-serving-go/tensorflow_serving/sources/storage_path"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	anypb "google.golang.org/protobuf/types/known/anypb"
